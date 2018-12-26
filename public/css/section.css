@@ -1,0 +1,226 @@
+body {
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+div.Apl_Class {
+    margin-top: 20px;
+}
+div.Apl_Class ul.CFcation,
+div.Apl_Class ul.CFcation_top,
+div.Apl_Class ul.CFcation_middle{
+    width: 1000px;
+    margin: 15px auto;
+    list-style: none;
+    background: #ddd;
+    height: 35px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+div.Apl_Class ul.CFcation li,
+div.Apl_Class ul.CFcation_top li,
+div.Apl_Class ul.CFcation_middle li{
+    color: #555555;
+}
+div.Apl_Class ul.CFcation li,
+div.Apl_Class ul.CFcation_top li,
+div.Apl_Class ul.CFcation_middle li{
+    font-size: 16px;
+    float: left;
+    line-height: 35px;
+    margin-left: 15px;
+    width: 105px;
+    height: 34px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+div.Apl_Class ul.CFcation_top .font_cm {
+    margin-left: 40px;
+}
+div.Apl_Class ul.CFcation_top .font_one {
+    margin-left: 30px;
+}
+div.Apl_Class ul.CFcation li.active,
+div.Apl_Class ul.CFcation_middle li.active,
+div.Apl_Class ul.CFcation_top li.active{
+    display: inline-block;
+    background: #fff;
+    width: 105px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #000;
+}
+.shop_list {
+    display: flex;
+    width: 1000px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.shop_list .shop {
+    width: 32%;
+    height: 600px;
+    border-radius: 8px;
+    position: relative;
+    background: #F2F2F2;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.shop_list .shop .img img {
+    margin-top: 10%;
+    height: 131px;
+    cursor: pointer;
+}
+.shop_list .shop .radius {
+    width: 22px;
+    display: inline-block;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 7%;
+}
+.shop_list .shop .p1 {
+    margin-top: 10%;
+    cursor: pointer;
+}
+.shop_list .shop .p2 {
+    text-align: center;
+    margin-top: 5%;
+    color: #999;
+    margin-bottom: 8%;
+    cursor: pointer;
+}
+.shop_list .shop .desc {
+    list-style: circle;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 40px 0  60px;
+    cursor: pointer;
+    color: #666;
+}
+.shop_list .shop .desc li.no_wrap {
+    white-space: nowrap;
+}
+.shop_list .shop .desc li {
+    margin-bottom: 10%;
+}
+.content_list {
+    width: 1000px;
+    margin: 10px auto;
+}
+.content_list ul{
+    float: right;
+    text-align: center;
+}
+.content_list ul li{ 
+    float: left;
+    line-height: 20px;
+    padding: 8px 15px;
+    border:1px solid #888;
+    cursor: pointer;
+}
+.content_list ul li>a{
+    color: #0AA1ED;
+}
+.content_list ul li:not(:last-child){
+    border-right-width: 0;
+}
+.content_list ul li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.content_list ul li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.content_list ul li.active{
+    background: #0AA1ED;
+}
+.content_list ul li.active a{
+    color: #fff;
+}
+.content_list ul li.disabled{
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+.content_list ul li.disabled a{
+    color: #ccc;
+    cursor: not-allowed;
+}
+/*添加购物车模块*/
+section .message {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.message>div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 688px;
+}
+.message img.normal{
+    float: left;
+    width: 260px;
+    margin-right: 28px;
+    margin-top: 35px;
+}
+.message img.pro{
+    float: left;
+    width: 150px;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+.message ul {
+    float: left;
+    font-size: 16px;
+}
+.message ul li {
+    margin-bottom: 5px;
+    width: 400px;
+    color: #fff
+}
+.message ul li.price {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.message ul li.price .fuck{
+    font-size: 16px;
+}
+.message ul li.price span.you{
+    color: royalblue;
+}
+.message ul li.background {
+    background: #555555;
+    box-shadow: 0px 0px 10px #555;
+    border-radius: 5px;
+    padding:10px;
+}
+.message ul li span.car{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    width: 110px;
+    height: 35px;
+    background-color: #0AA1ED;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    line-height: 35px;
+}
+.message .close {
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}

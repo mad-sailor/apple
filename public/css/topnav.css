@@ -1,0 +1,35 @@
+#top-nav{
+    background-color: #141414;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 92px;
+}
+#top-nav>ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 1024px;
+    height: 100%;
+    line-height: 68px;
+    display: flex;
+    justify-content: space-around;
+}
+#top-nav>ul>li{
+    height: 68px;
+    cursor: pointer;
+}
+#top-nav>ul>li img{
+    height: 54px;
+    margin-top: -30px;
+}
+#top-nav>ul>li p{
+    line-height: 0;
+    margin-top: -5px;
+    font-size: 14px;
+}
+#top-nav>ul>li>a{
+    color: #fff;
+}

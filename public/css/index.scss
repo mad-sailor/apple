@@ -1,0 +1,252 @@
+.top-three{
+    width: 100%; 
+    background: #FAFAFA;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 12px;
+    h1{
+        padding-top: 138px;
+        padding-right: 20px;
+        font-size: 52px;
+        letter-spacing: .002em;
+        font-weight: 600;
+    }
+    h3{
+        margin-top: 5px;
+        font-weight: normal;
+        font-size: 26px;
+        color:#111 !important;
+        letter-spacing: .009em;
+    }
+    p{
+        margin-top: 15px;
+        margin-bottom: 80px;
+        padding-right: 20px;
+        a:last-child{
+            margin-left: 26px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.top-three:nth-child(3){
+    background: #F5F5F5;
+}
+.top-three:nth-child(4){
+    background: #131218;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    h1,h3,p>a{
+        color:#fff !important;
+    }
+}
+.six-block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &>div{
+        width: 49%;
+        margin: 6px 0;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        text-align: center;
+        h4{
+            font-size: 35px;
+        }
+        h5{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        p>a:last-child{
+            margin-left: 26px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    .behind,.iphonex{
+        color:#fff;
+        p>a{
+            color:#fff;
+        }
+    }
+    .iphone8{
+        background-color: rgb(249, 240, 235);
+        background-position: 50% 100%;
+    }
+    .three-rings{
+        background-color: #000;
+        background-position: 50% 100%;
+        h4,h5{
+            color:#fff;
+        }
+    }
+}
+@media screen and (min-width:1069px){
+    .top-three{
+        height:692px;
+    }
+    .top-three:nth-child(4){
+        background-image:url(../img/index/macbook_pro_performance_largetall.jpg);
+        background-size: 2560px 736px;
+    }
+    .six-block>div{
+        height:580px;
+        background-size: 1262px 580px;
+    }
+    .six-block{
+        div.college{
+            background-image: url(../img/index/shop_for_college_large.jpg);
+        } 
+        div.iphonex{
+            background-image: url(../img/index/iphone_x_a11_large.jpg);
+            p>a{
+                margin: 0;;
+            }
+        }
+        div.iphone8{
+            background-image: url(../img/index/iphone_8_large.jpg);
+            background-size: 292px 391px;
+        }
+        div.new{
+            background-image: url(../img/index/trade_up_large.jpg);
+        }
+        div.three-rings{
+            background-image: url(../img/index/three_rings_large.jpg);
+            background-size: 283px 386px;
+        }
+        .college,.iphone8,.new,.three-rings{
+            h4{
+                margin-top: 52px;
+                margin-bottom: 4px;
+            }
+        }
+        .behind,.iphonex{
+            h4{
+                margin-top: 434px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+@media screen and (min-width:736px) and (max-width:1068px){
+    .top-three{
+        height:650px;
+        h1{
+            font-size: 42px; 
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            margin-top: 15px;
+            margin-bottom: 80px;
+            padding-right: 20px;
+            a:last-child{
+                margin-left: 20px;
+            }
+        }
+    }
+    .top-three:nth-child(4){
+        background-image:url(../img/index/macbook_pro_performance_mediumtall.jpg);
+        background-size: 1068px 694px;  
+    }
+    .six-block{
+        div{
+            height:490px; 
+            background-size: 516px 490px;
+        }
+        div.college{
+            background-image: url(../img/index/shop_for_college_medium.jpg);
+        }
+        div.iphonex{
+            background-image: url(../img/index/iphone_x_a11_medium.jpg);
+        }
+        div.iphone8{
+            background-image: url(../img/index/iphone_8_medium.jpg);
+            background-size: 229px 305px;
+        }
+        div.new{
+            background-image: url(../img/index/trade_up_medium.jpg);
+        }
+        div.three-rings{
+            background-image: url(../img/index/three_rings_medium.jpg);
+            background-size: 219px 292px;
+        }
+        .college,.iphone8,.new,.three-rings{
+            h4{
+                margin-top: 42px;
+                margin-bottom: 3px;
+            }
+        }
+        .behind,.iphonex{
+            h4{
+                margin-top: 310px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+@media screen and (max-width:735px){
+    .top-three{
+        height:500px;
+        h1{
+            padding-top: 28px;
+            font-size: 31px;
+        }
+        h3{
+            font-size: 21px;
+        }
+        p{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            font-size: 16px;
+        }
+    }
+    .top-three:nth-child(4){
+        background-image:url(../img/index/macbook_pro_performance_small.jpg);
+        background-size: 736px 548px; 
+        h1{
+            padding-top: 138px;      
+        }  
+    }
+    .six-block{
+        div{
+            width: 100%;
+            height:500px;
+            background-size: 736px 548px;
+        }
+        div.college{
+            background-image: url(../img/index/shop_for_college_small.jpg);
+        }
+        div.iphonex{
+            background-image: url(../img/index/iphone_x_a11_small.jpg);
+        }
+        div.iphone8{
+            background-image: url(../img/index/iphone_8_small.jpg);
+            background-size: 257px 339px;
+        }
+        div.new{
+            background-image: url(../img/index/trade_up_small.jpg);
+        }
+        div.three-rings{
+            background-image: url(../img/index/three_rings_medium.jpg);
+            background-size: 219px 297px;
+        }
+        .college,.iphone8,.new,.three-rings{
+            h4{
+                margin-top: 37px;
+                margin-bottom: 3px;
+            }
+        }
+        .behind,.iphonex{
+            h4{
+                margin-top: 356px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}

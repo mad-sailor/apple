@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/baidu.css">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97">
+    </script>
+</head>
+<body>
+	<header id="header"></header>
+	<nav id="top-nav"></nav>
+	<div class="body">
+		<div class="header">
+			<div class="a1">要查找的地址信息</div>
+			<div class="a1" id="s">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：
+				<input type="search" id="search1" placeholder="请选择地址" >
+				<span class="icon"><a href="">切换省份</a></span>
+			</div>
+			<div class="tion">
+				<ul>省份
+					<li><a href="">辽宁</a></li> 
+					<li><a href="">吉林</a></li>
+					<li><a href="">黑龙江</a></li>
+					<li><a href="">河北</a></li>
+					<li><a href="">山西</a></li>
+					<li><a href="">陕西</a></li>
+					<li><a href="">山东</a></li>
+					<li><a href="">安徽</a></li>
+					<li><a href="">江苏</a></li>
+					<li><a href="">浙江</a></li>
+					<li><a href="">河南</a></li>
+					<li><a href="">湖北</a></li>
+				</ul>
+				<ul>省份
+					<li><a href="">湖南</a></li>
+					<li><a href="">江西</a></li>
+					<li><a href="">台湾</a></li>
+					<li><a href="">福建</a></li>
+					<li><a href="">云南</a></li>
+					<li><a href="">海南</a></li>
+					<li><a href="">四川</a></li>
+					<li><a href="">贵州</a></li>
+					<li><a href="">广东</a></li>
+					<li><a href="">甘肃</a></li>
+					<li><a href="">青海</a></li>
+				</ul>
+				<ul>直辖市
+					<li><a href="">北京市</a></li>
+					<li><a href="">上海市</a></li>
+					<li><a href="">天津市</a></li>
+					<li><a href="">重庆市</a></li>
+				</ul>
+				<ul>特别行政区
+					<li><a href="">香港特别行政区</a></li>
+					<li><a href="">澳门特别行政区</a></li>
+				</ul>
+			</div>
+			<div class="a1">详细地址：
+				<input type="search" id="search2" placeholder="请输入详细地址">
+			</div>
+			<div class="a1">店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铺：
+				<input type="search" id="search3" placeholder="请输入区/镇名称" vlaue="apple">
+				<button id="position">搜索</button>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div id="ad"></div>
+			<div id="adc">
+				<div id="allmap"></div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/topnav.js"></script>
+	<script src="js/baidu.js"></script>
+</body>
+</html>

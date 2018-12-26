@@ -1,0 +1,86 @@
+/* 登陆 */
+#login{
+    height: 700px;
+}
+#login>.l-container{
+    width:700px ;
+    height:500px;
+    border: 1px solid #ddd;                                                    margin:  0 auto;
+    margin-top: 30px !important;  
+    margin-bottom: 30px !important;  
+    position: relative;                           
+}
+
+#login>.l-container>ul{
+    margin-top: 20px;
+    border:1px solid #ddd;
+    border-right: 0;
+    width:191px;
+    height: 50px;
+    margin:35px 250px 45px;                                                                                  
+}
+#login>.l-container>.clear{
+    content: "";
+    display: "block";
+    clear:both;
+}
+#login>.l-container>ul>li{
+    float: left;
+    padding: 0 30px;
+    line-height: 50px;
+    cursor: pointer;
+    border-right: 1px solid #DDDDDD;
+}
+#login>.l-container>ul>.active{
+    background:#333;
+    color: white;
+}
+
+/*#login>.l-container>.inputs>div>label{
+    font-size: 16px;
+    float: left;
+    text-align: right;
+}*/
+#login>.l-container>div.login-box>.inputs{
+    margin: 0 192px;
+}
+#login>.l-container>div.login-box>.inputs>.aid{
+    margin-bottom: 40px;
+}
+/*#login>.l-container>.inputs>.apd{
+    margin-top: 20px;
+}*/
+#login>.l-container>.login-box>.inputs>div>input{
+    width:235px;
+    height:30px;
+}
+#login>.l-container>.login-box>.inputs>div>p{
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    display: none;
+}
+#login>.l-container>.login-box>p.mes{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+#login>.l-container>.login-box>button{
+   height:50px; 
+   line-height: 50px;
+   /* padding:0 30px; */
+   width: 191px;
+   background: linear-gradient(#42a1ec,#0070c9);
+   color: white;
+   border:none;
+   margin:55px 250px 30px;
+}
+#login>.l-container>.login-box>p>a{
+    font-size: 14px;
+    color:#0070c9;
+}
+#login>.l-container>.login-box>.forget ,.no{
+    margin:0 192px;
+}

@@ -1,0 +1,183 @@
+#header{
+    width:100%;
+    height:48px;
+    background: rgba(0,0,0,.8);
+}
+#header>div.top-nav{
+    width:1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+#header>div.top-nav>ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#header>div.top-nav>ul>li{
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    line-height: 48px;
+}
+#header .shop-cart{
+    position: absolute;
+    top:52px;
+    transform: translateX(-50%);
+    z-index: 4;
+    width: 290px;
+    height: 311px;
+    padding: 0 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    border-radius: 2px;
+    display: none;
+}
+#header .shop-cart>.triangle{
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border: 1px solid #d6d6d6;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    background-color: #fff;
+}
+#header .shop-cart>p{
+    line-height: 17.5px;
+    font-size: 15px;
+    color: #888;
+    padding: 35px 0;
+    margin: 0;
+    text-align: center;
+}
+#header .shop-cart>ul>li{
+    border-top: 1px solid #e3e3e3;
+}
+#header .shop-cart>ul>li>a{
+    display: block;
+    font-size: 15px;
+    line-height: 43px;
+    padding: 0 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-position: 4px 49%;
+    background-repeat: no-repeat;
+}
+#header .shop-cart>ul>li:first-child>a{
+    background-image: url('../img/header/bag.svg');
+}
+#header .shop-cart>ul>li:nth-child(2)>a{
+    background-image: url('../img/header/favorites.svg');
+}
+#header .shop-cart>ul>li:nth-child(3)>a{
+    background-image: url('../img/header/orders.svg');
+}
+#header .shop-cart>ul>li:nth-child(4)>a{
+    background-image: url('../img/header/account.svg');
+}
+#header .shop-cart>ul>li:last-child>a{
+    background-image: url('../img/header/signIn.svg');
+}
+#header .shop-cart>ul>li>a:hover{
+    text-decoration: underline;
+}
+#header>div.top-nav>ul>li.top-line{
+    display: none;
+    cursor: pointer;
+}
+#header>div.top-nav>ul>li.search>input{
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: 0;
+    background: #333;
+    outline: 0;
+    padding: 10px 30px 9px;
+    caret-color: #fff;
+    font-size: 1em;
+    background-image: url(../img/header/image_small_search.svg);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    display: none;
+}
+#header>div.small-search{
+    height: 0;
+    overflow: hidden;
+}
+@media screen and (max-width:1024px) and (min-width:768px){
+    #header>div.top-nav{
+        width:100% !important;
+    }
+}
+@media screen and (max-width:767px){
+    #header>div.top-nav{
+        width:100% !important;
+    }
+    #header>div.top-nav>ul>li.top-line{
+        display: block;
+        width:18px;
+        padding: 14px 0 9px;
+        line-height: 48px;
+    }
+    #header>div.top-nav>ul>li.top-line>span{
+        display: block;
+        border:0.5px solid #fff;
+        margin: 7px 0;
+    }
+    #header>div.small-search{
+        width: 100%;
+        position: relative;
+    }
+    #header>div.small-search>div.input{
+        width:100%;
+        height:53px;
+        padding: 0 40px;
+        position: relative;
+    }
+    #header>div.small-search>div.input::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #282828;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        z-index: 1;
+    }
+    #header>div.small-search>div.input>input{
+        width: 100%;
+        height: 36px;
+        border-radius: 5px;
+        border: 0;
+        background: #282828;
+        outline: 0;
+        padding: 10px 30px 9px;
+        caret-color: #fff;
+        font-size: 1em;
+        background-image: url(../img/header/image_small_search.svg);
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+    }
+    #header>div.small-search>ul{
+        max-width: 664px;
+        height:100%;
+        margin: 0 auto;
+        padding: 45px 40px 8px;
+        margin-top: -35px;
+    }
+    #header>div.small-search>ul>li{
+        width: 100%;
+        height:44px;
+        line-height: 25px; 
+    }
+    #header>div.small-search>ul>li:first-child~li::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #282828;
+    }
+}

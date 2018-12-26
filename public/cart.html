@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header id="header"></header>
+    <nav id="top-nav"></nav>
+    <div id="cart">
+        <div>          
+            <div>商品</div>
+            <div>单价</div>
+            <div>数量</div>
+            <div>金额</div>
+            <div>操作</div>
+        </div>
+        <ul>
+            <li v-for="(tab,index) in tabs" :key="index">
+                <div>
+                    <input type="checkbox" :checked="tabprice.indexOf(tab)>=0" @click="checkedOne(index)">
+                </div>
+                <div>
+                    <div>                   
+                        <a href="javascript:;"><img :src="tab.pic" alt=""></a>
+                        <p v-text="tab.screen"></p>
+                        <p v-text="tab.mtitle"></p>
+                    </div>
+                </div>
+                <div>
+                    ￥{{tab.price}}
+                </div>
+                <div>
+                    <span>
+                        <button @click="minus(tab.cid,index)">-</button>
+                        {{tab.coun}}
+                        <button @click="plus(tab.cid,index)">+</button>
+                    </span>
+                </div>
+                <div>
+                    ￥{{tab.price*tab.coun.toFixed(2)}}
+                </div>
+                <div>
+                    <span><button @click="del(tab.cid,index)">删除</button></span>
+                </div>
+            </li>            
+        </ul>
+        <div>
+            <input type="checkbox" @click="checkedAll" v-model="isCheckedAll">
+            <div>全选</div>
+            <div></div>
+            <div>已选<b>{{tabprice.length}}</b>件商品</div>
+            <div>合计(不含运费):</div>
+            <div>{{total.toFixed(2)}}</div>
+            <div @click="pay">去结算</div>
+        </div>   
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/topnav.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

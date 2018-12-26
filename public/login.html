@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div id="login">
+        <div class="l-container">
+            <ul class="clear">
+                <li class="login-btn active">登录</li>
+                <li class="registe-btn ">注册</li>
+            </ul>
+            <!-- 登陆 -->
+            <div class="login-box">
+                <div class="inputs">
+                    <div class="aid">
+                        <label for="uname">苹果ID&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" placeholder="3-9位,以字母开头" id="uname" name="uname">
+                    </div>
+                    <div class="apd">
+                        <label for="upwd">用户密码</label>
+                        <input type="password"  placeholder="6-16位" id="upwd" name="upwd">
+                    </div>
+                </div>
+                <p class="mes">您的Apple ID是您用于登录ITunes、App Store和Cloud的电子邮件地址</p>
+                <button id="btn-login">登录</button>
+                <p class="forget"><a href="#">忘记了您的Apple ID或密码？</a></p>
+                <p class="no"><a href="#">没有Apple ID？立即创建一个。</a></p>
+            </div>
+            <!-- 注册 -->
+
+            <div class="register">
+                <p>
+                    <label for="">用户名&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="r-uname" name="uname" placeholder="3-9位,以字母开头" required class="uname">
+                </p>
+                <p>
+                    <label for="">设置密码</label>
+                    <input type="password" id="r-upwd" name="upwd" placeholder="6-16位" class="upwd">
+                </p>
+                <p>
+                    <label for="">确认密码</label>
+                    <input type="password" id="c-upwd" name="cpwd" placeholder="6-16位"  class="c-upwd">
+                </p>
+                <p>
+                    <label for="">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" id="email" name="email" placeholder="必填" class="email">
+                </p>
+                <p>
+                    <input type="checkbox" id="agree" placeholder="必填" class="agree">
+                    <label for="agree">我同意&lt;&lt;用户手册&gt;&gt;和&lt;&lt;保密条款&gt;&gt;</label>
+                </p>
+                <button id="btn-reg" class="disabled">注册</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "group",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "group_up",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0"
+  }
+}
